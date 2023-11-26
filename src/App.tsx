@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="h-screen w-screen">
       <Canvas camera={{ position: [0, 2, 3] }} shadows>
-        <mesh position={[0, 0.5, 0]} castShadow>
+        <mesh position={[0, 0.6, 0]} castShadow>
           <boxGeometry args={[1, 1]} />
           <meshStandardMaterial color="blue" />
         </mesh>
