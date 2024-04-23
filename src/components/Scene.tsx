@@ -6,6 +6,7 @@ import {
   PerspectiveCamera,
 } from '@react-three/drei';
 import { useEffect, useRef } from 'react';
+import { Human } from '../models/Human';
 
 const Scene = () => {
   const cameraRef = useRef<THREE.PerspectiveCamera>(null!);
@@ -22,6 +23,7 @@ const Scene = () => {
         maxPolarAngle={degToRad(90)}
       />
       <Environment files='deneme.hdr' background blur={0.3} />
+      <Human />
       <mesh position={[0, 0.5, 0]} castShadow>
         <boxGeometry args={[1, 1]} />
         <meshStandardMaterial color='blue' />
